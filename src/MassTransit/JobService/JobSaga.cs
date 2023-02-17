@@ -1,5 +1,6 @@
 namespace MassTransit
 {
+    using MassTransit.Contracts.JobService;
     using System;
     using System.Collections.Generic;
 
@@ -39,5 +40,6 @@ namespace MassTransit
 
         public Guid CorrelationId { get; set; }
         public string ConcurrencyKey { get; set; }
+        public JobPriority JobPriority { get; set; }
     }
 }
