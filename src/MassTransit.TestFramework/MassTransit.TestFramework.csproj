@@ -3,6 +3,9 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net7.0</TargetFrameworks>
+    <PackageId>Bestseller.MassTransit.TestFramework</PackageId>
+    <AssemblyName>Bestseller.MassTransit.TestFramework</AssemblyName>
+    <Version>8.1.2-1.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(IsWindows)' == 'true' ">

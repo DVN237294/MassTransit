@@ -15,7 +15,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MassTransit.Quartz</PackageId>
+    <PackageId>Bestseller.MassTransit.Quartz</PackageId>
+    <AssemblyName>Bestseller.MassTransit.Quartz</AssemblyName>
+    <Version>8.0.12-1.0.0</Version>
     <Title>MassTransit.Quartz</Title>
     <PackageTags>MassTransit;Quartz;Scheduler;Scheduling</PackageTags>
     <Description>MassTransit Quartz.NET scheduler support; $(Description)</Description>

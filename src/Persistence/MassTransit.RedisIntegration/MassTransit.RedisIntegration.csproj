@@ -13,7 +13,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MassTransit.Redis</PackageId>
+    <PackageId>Bestseller.MassTransit.Redis</PackageId>
+    <AssemblyName>Bestseller.MassTransit.Redis</AssemblyName>
+    <Version>8.0.12-1.0.0</Version>
     <Title>MassTransit.Redis</Title>
     <PackageTags>MassTransit;Redis</PackageTags>
     <Description>MassTransit Redis persistence support; $(Description)</Description>
