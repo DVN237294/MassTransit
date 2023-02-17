@@ -10,5 +10,7 @@ namespace MassTransit.Contracts.JobService
         TimeSpan JobTimeout { get; }
 
         Guid JobId { get; }
+
+        public string ConcurrencyKey { get; }
     }
 }

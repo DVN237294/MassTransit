@@ -311,7 +311,7 @@ namespace MassTransit
                 context.Saga.ServiceAddress = context.GetPayload<ConsumeContext>().SourceAddress;
                 context.Saga.JobTimeout = context.Message.JobTimeout;
                 context.Saga.JobTypeId = context.Message.JobTypeId;
-
+                context.Saga.ConcurrencyKey = context.Message.ConcurrencyKey;
                 context.Saga.AttemptId = NewId.NextGuid();
             });
         }
@@ -325,7 +325,8 @@ namespace MassTransit
                     {
                         JobId = context.Saga.CorrelationId,
                         context.Saga.JobTypeId,
-                        context.Saga.JobTimeout
+                        context.Saga.JobTimeout,
+                        context.Saga.ConcurrencyKey,
                     }), context => context.ResponseAddress = machine.JobSagaEndpointAddress)
                 .TransitionTo(machine.AllocatingJobSlot);
         }

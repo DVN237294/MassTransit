@@ -38,5 +38,6 @@ namespace MassTransit
         public int Version { get; set; }
 
         public Guid CorrelationId { get; set; }
+        public string ConcurrencyKey { get; set; }
     }
 }
