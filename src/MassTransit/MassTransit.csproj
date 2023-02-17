@@ -10,8 +10,12 @@
   </PropertyGroup>
 
  <PropertyGroup>
+    <PackageId>Bestseller.MassTransit</PackageId>
+    <AssemblyName>Bestseller.MassTransit</AssemblyName>
+    <Version>8.0.12-1.0.0</Version>
     <PackageTags>MassTransit</PackageTags>
     <Description>$(Description)</Description>
+   
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net462'">
