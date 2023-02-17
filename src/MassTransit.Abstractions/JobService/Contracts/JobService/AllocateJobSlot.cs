@@ -12,5 +12,7 @@ namespace MassTransit.Contracts.JobService
         Guid JobId { get; }
 
         public string ConcurrencyKey { get; }
+
+        JobPriority JobPriority { get; }
     }
 }

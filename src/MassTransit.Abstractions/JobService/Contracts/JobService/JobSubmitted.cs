@@ -32,5 +32,10 @@ namespace MassTransit.Contracts.JobService
         /// The job, as an object dictionary
         /// </summary>
         IDictionary<string, object> Job { get; }
+
+        /// <summary>
+        /// The priority with which this job should be executed.
+        /// </summary>
+        JobPriority JobPriority { get; }
     }
 }

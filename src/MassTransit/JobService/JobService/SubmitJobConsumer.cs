@@ -25,17 +25,17 @@ namespace MassTransit.JobService
 
         public Task Consume(ConsumeContext<SubmitJob<TJob>> context)
         {
-            return PublishJobSubmitted(context, context.Message.JobId, context.Message.Job, context.SentTime ?? DateTime.UtcNow, context.Message.ConcurrencyKey);
+            return PublishJobSubmitted(context, context.Message.JobId, context.Message.Job, context.SentTime ?? DateTime.UtcNow, context.Message.ConcurrencyKey, context.Message.JobPriority);
         }
 
         public Task Consume(ConsumeContext<TJob> context)
         {
             var jobId = context.RequestId ?? NewId.NextGuid();
 
-            return PublishJobSubmitted(context, jobId, context.Message, context.SentTime ?? DateTime.UtcNow, null);
+            return PublishJobSubmitted(context, jobId, context.Message, context.SentTime ?? DateTime.UtcNow, null, JobPriority.High);
         }
 
-        async Task PublishJobSubmitted(ConsumeContext context, Guid jobId, TJob job, DateTime timestamp, string concurrencyKey)
+        async Task PublishJobSubmitted(ConsumeContext context, Guid jobId, TJob job, DateTime timestamp, string concurrencyKey, JobPriority jobPriority)
         {
             await context.Publish<JobSubmitted>(new
             {
@@ -44,7 +44,8 @@ namespace MassTransit.JobService
                 Timestamp = timestamp,
                 Job = context.ToDictionary(job),
                 _options.JobTimeout,
-                ConcurrencyKey = concurrencyKey
+                ConcurrencyKey = concurrencyKey,
+                JobPriority = jobPriority
             });
 
             if (context.RequestId.HasValue && context.ResponseAddress != null)

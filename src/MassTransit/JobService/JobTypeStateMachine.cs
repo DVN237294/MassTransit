@@ -132,6 +132,20 @@ namespace MassTransit
             if (nextInstance == null)
                 return false;
 
+            var jobPriorityBucket = context.Message.JobPriority switch
+            {
+                JobPriority.Low => 0.5,
+                JobPriority.BelowNormal => 0.7,
+                JobPriority.Normal => 0.8,
+                JobPriority.AboveNormal => 0.9,
+                _ => 1.0
+            };
+
+            if (nextInstance.InstanceCount >= Math.Ceiling(concurrentJobLimit * jobPriorityBucket))
+            {
+                return false;
+            }
+
             context.Saga.ActiveJobCount++;
             context.Saga.ActiveJobs.Add(new ActiveJob
             {
