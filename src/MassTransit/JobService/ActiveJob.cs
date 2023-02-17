@@ -12,7 +12,7 @@ namespace MassTransit
     {
         public Guid JobId { get; set; }
         public DateTime Deadline { get; set; }
-
+        public string ConcurrencyKey { get; set; }
         public Uri InstanceAddress { get; set; }
 
         public bool Equals(ActiveJob other)

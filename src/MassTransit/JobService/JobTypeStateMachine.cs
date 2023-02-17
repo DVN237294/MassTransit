@@ -112,6 +112,12 @@ namespace MassTransit
 
             var concurrentJobLimit = context.Saga.OverrideJobLimit ?? context.Saga.ConcurrentJobLimit;
 
+            if (!string.IsNullOrEmpty(context.Message.ConcurrencyKey) &&
+                context.Saga.ActiveJobs.Any(job => job.ConcurrencyKey == context.Message.ConcurrencyKey && job.Deadline > timestamp))
+            {
+                return false;
+            }
+
             var instances = from i in context.Saga.Instances
                 join a in context.Saga.ActiveJobs on i.Key equals a.InstanceAddress into ai
                 where ai.Count() < concurrentJobLimit
@@ -131,7 +137,8 @@ namespace MassTransit
             {
                 JobId = jobId,
                 Deadline = timestamp + context.Message.JobTimeout,
-                InstanceAddress = nextInstance.InstanceAddress
+                InstanceAddress = nextInstance.InstanceAddress,
+                ConcurrencyKey = context.Message.ConcurrencyKey
             });
 
             context.Saga.Instances[nextInstance.InstanceAddress].Used = timestamp;
