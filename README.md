@@ -1,9 +1,8 @@
-# Bestseller
+# BESTSELLER TECH x MassTransit
 
-This is a bestseller fork of MassTransit.
-Primarily used and managed by @BESTSELLER/digital-media-marketing for the [StorM project](https://backstage.k8s.bestcorp.net/catalog/default/system/storm)
+This is a [BESTSELLER TECH](https://bestseller.tech/) fork of [MassTransit](https://github.com/MassTransit/MassTransit).
 
-For now, these packages will be manually packed and pushed to the GitHub nuget repository
+Package and assembly names have been prepended with `Bestseller` and versions indicate the upstream and bestseller version, in the format `<MassTransit version>`-`<Bestseller version>`, for example: `8.0.13-1.0.0`
 
 # MassTransit
 
