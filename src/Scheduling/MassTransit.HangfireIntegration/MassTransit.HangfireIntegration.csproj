@@ -17,7 +17,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.Hangfire</PackageId>
     <AssemblyName>Bestseller.MassTransit.Hangfire</AssemblyName>
-    <Version>8.0.12-1.0.0</Version>
+    <Version>8.0.13-1.0.0</Version>
     <Title>MassTransit.Hangfire</Title>
     <PackageTags>MassTransit;Hangfire;Scheduler;Scheduling</PackageTags>
     <Description>MassTransit Hangfire scheduler support; $(Description)</Description>

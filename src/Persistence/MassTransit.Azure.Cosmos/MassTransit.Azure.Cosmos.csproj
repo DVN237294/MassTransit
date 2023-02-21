@@ -16,7 +16,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.Azure.Cosmos</PackageId>
     <AssemblyName>Bestseller.MassTransit.Azure.Cosmos</AssemblyName>
-    <Version>8.0.12-1.0.0</Version>
+    <Version>8.0.13-1.0.0</Version>
     <Title>MassTransit.Azure.Cosmos</Title>
     <PackageTags>MassTransit;Cosmos;Azure</PackageTags>
     <Description>MassTransit Azure Cosmos persistence support; $(Description)</Description>

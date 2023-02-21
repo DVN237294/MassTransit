@@ -13,7 +13,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.Newtonsoft</PackageId>
     <AssemblyName>Bestseller.MassTransit.Newtonsoft</AssemblyName>
-    <Version>8.0.12-1.0.0</Version>
+    <Version>8.0.13-1.0.0</Version>
     <Title>MassTransit.Newtonsoft</Title>
     <PackageTags>MassTransit;Newtonsoft;JSON.NET</PackageTags>
     <Description>MassTransit Newtonsoft JSON/BSON support; $(Description)</Description>

@@ -15,7 +15,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.MongoDb</PackageId>
     <AssemblyName>Bestseller.MassTransit.MongoDb</AssemblyName>
-    <Version>8.0.12-1.0.0</Version>
+    <Version>8.0.13-1.0.0</Version>
     <Title>MassTransit.MongoDb</Title>
     <PackageTags>MassTransit;MongoDb</PackageTags>
     <Description>MassTransit MongoDb persistence support; $(Description)</Description>

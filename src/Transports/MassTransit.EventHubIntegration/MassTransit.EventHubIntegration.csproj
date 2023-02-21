@@ -17,7 +17,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.EventHub</PackageId>
     <AssemblyName>Bestseller.MassTransit.EventHub</AssemblyName>
-    <Version>8.0.12-1.0.0</Version>
+    <Version>8.0.13-1.0.0</Version>
     <Title>MassTransit.EventHub</Title>
     <PackageTags>MassTransit;EventHub</PackageTags>
     <Description>MassTransit EventHub Support; $(Description)</Description>
