@@ -1,5 +1,11 @@
-MassTransit
-===========
+# Bestseller
+
+This is a bestseller fork of MassTransit.
+Primarily used and managed by @BESTSELLER/digital-media-marketing for the [StorM project](https://backstage.k8s.bestcorp.net/catalog/default/system/storm)
+
+For now, these packages will be manually packed and pushed to the GitHub nuget repository
+
+# MassTransit
 
 MassTransit is a _free, open-source_ distributed application framework for .NET. MassTransit makes it easy to create applications and services that leverage message-based, loosely-coupled asynchronous communication for higher availability, reliability, and scalability.
 
@@ -11,19 +17,17 @@ MassTransit is Apache 2.0 licensed.
 
 Get started by [reading through the documentation](https://masstransit-project.com/).
 
-Build Status
-------------
+## Build Status
 
 | Branch        |                                                                                                Status                                                                                                |
-|---------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| ------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | master        |    [![master](https://github.com/MassTransit/MassTransit/actions/workflows/build.yml/badge.svg?branch=master&event=push)](https://github.com/MassTransit/MassTransit/actions/workflows/build.yml)    |
 | develop       |   [![develop](https://github.com/MassTransit/MassTransit/actions/workflows/build.yml/badge.svg?branch=develop&event=push)](https://github.com/MassTransit/MassTransit/actions/workflows/build.yml)   |
 
-MassTransit NuGet Packages
----------------------------
+## MassTransit NuGet Packages
 
 | Package Name                                                    | .NET | .NET Standard | .NET Framework |
-|-----------------------------------------------------------------|:----:|:-------------:|:--------------:|
+| --------------------------------------------------------------- | :--: | :-----------: | :------------: |
 | **Main**                                                        |      |               |                |
 | [MassTransit][MassTransit.nuget]                                | 6.0  |   2.0, 2.1    |     4.6.2      |
 | [MassTransit.Abstractions][MassTransitAbstractions.nuget]       | 6.0  |   2.0, 2.1    |     4.6.2      |
@@ -35,7 +39,7 @@ MassTransit NuGet Packages
 | [MassTransit.Interop.NServiceBus][MassTransitNServiceBus.nuget] | 6.0  |      2.0      |     4.6.2      |
 | [MassTransit.TestFramework][TestFramework.nuget]                | 6.0  |   2.0, 2.1    |     4.6.2      |
 | **Monitoring**                                                  |      |               |                |
-| [MassTransit.Prometheus][Prometheus.nuget]                      | 6.0  |      2.0      |     4.6.2      |
+| [MassTransit.Prometheus][prometheus.nuget]                      | 6.0  |      2.0      |     4.6.2      |
 | **Persistence**                                                 |      |               |                |
 | [MassTransit.AmazonS3][AmazonS3.nuget]                          | 6.0  |      2.0      |     4.6.2      |
 | [MassTransit.Azure.Cosmos][Cosmos.nuget]                        | 6.0  |   2.0, 2.1    |     4.6.2      |
@@ -64,7 +68,7 @@ MassTransit NuGet Packages
 | [MassTransit.Kafka][Kafka.nuget]                                | 6.0  |   2.0, 2.1    |     4.6.2      |
 | [MassTransit.EventHub][EventHub.nuget]                          | 6.0  |   2.0, 2.1    |     4.6.2      |
 
-## Discord 
+## Discord
 
 Get help live at the MassTransit Discord server.
 
@@ -74,35 +78,37 @@ Get help live at the MassTransit Discord server.
 
 **Pay attention**
 
-Please do not open an issue on GitHub, unless you have spotted an actual bug in MassTransit. 
+Please do not open an issue on GitHub, unless you have spotted an actual bug in MassTransit.
 
 Use [GitHub Discussions](https://github.com/MassTransit/MassTransit/discussions) to ask questions, bring up ideas, or other general items. Issues are not the place for questions, and will either be converted to a discussion or closed.
 
-This policy is in place to avoid bugs being drowned out in a pile of sensible suggestions for future 
+This policy is in place to avoid bugs being drowned out in a pile of sensible suggestions for future
 enhancements and calls for help from people who forget to check back if they get it and so on.
 
 ## Building from Source
 
- 1. Install the latest [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
- 2. Clone the source down to your machine<br/>
+1.  Install the latest [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+2.  Clone the source down to your machine<br/>
     ```bash
     git clone https://github.com/MassTransit/MassTransit.git
     ```
- 3. Run `dotnet build`
+3.  Run `dotnet build`
 
 ## Contributing
 
- 1. Turn off `autocrlf`
+1.  Turn off `autocrlf`
     ```bash
     git config core.autocrlf false
     ```
- 2. Hack!
- 3. Make a pull request
- 
+2.  Hack!
+3.  Make a pull request
+
 # REQUIREMENTS
-* .NET 6 SDK
+
+-   .NET 6 SDK
 
 # CREDITS
+
 Logo Design by _The Agile Badger_
 
 [MassTransit.nuget]: https://www.nuget.org/packages/MassTransit
