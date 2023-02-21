@@ -17,7 +17,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.WebJobs.EventHubs</PackageId>
     <AssemblyName>Bestseller.MassTransit.WebJobs.EventHubs</AssemblyName>
-    <Version>8.0.12-1.0.0</Version>
+    <Version>8.0.13-1.0.0</Version>
     <Title>MassTransit.WebJobs.EventHubs</Title>
     <PackageTags>MassTransit;Azure;EventHubs;AzureFunctions</PackageTags>
     <Description>MassTransit Azure WebJobs Event Hubs support; $(Description)</Description>

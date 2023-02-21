@@ -16,7 +16,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.Azure.ServiceBus.Core</PackageId>
     <AssemblyName>Bestseller.MassTransit.Azure.ServiceBus.Core</AssemblyName>
-    <Version>8.0.12-1.0.0</Version>
+    <Version>8.0.13-1.0.0</Version>
     <Title>MassTransit.Azure.ServiceBus.Core</Title>
     <PackageTags>MassTransit;Azure;ServiceBus</PackageTags>
     <Description>MassTransit Azure Service Bus Core transport support; $(Description)</Description>

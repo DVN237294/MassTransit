@@ -5,7 +5,7 @@
     <TargetFrameworks>net6.0</TargetFrameworks>
     <PackageId>Bestseller.MassTransit.SignalR</PackageId>
     <AssemblyName>Bestseller.MassTransit.SignalR</AssemblyName>
-    <Version>8.0.12-1.0.0</Version>
+    <Version>8.0.13-1.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(IsWindows)' == 'true' ">

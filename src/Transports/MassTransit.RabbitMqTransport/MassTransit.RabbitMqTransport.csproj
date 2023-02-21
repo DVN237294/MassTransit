@@ -16,7 +16,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.RabbitMQ</PackageId>
     <AssemblyName>Bestseller.MassTransit.RabbitMQ</AssemblyName>
-    <Version>8.0.12-1.0.0</Version>
+    <Version>8.0.13-1.0.0</Version>
     <Title>MassTransit.RabbitMQ</Title>
     <PackageTags>MassTransit;RabbitMQ</PackageTags>
     <Description>MassTransit RabbitMQ transport support; $(Description)</Description>
