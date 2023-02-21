@@ -134,10 +134,10 @@ namespace MassTransit
 
             var jobPriorityBucket = context.Message.JobPriority switch
             {
-                JobPriority.Low => 0.5,
-                JobPriority.BelowNormal => 0.7,
+                JobPriority.Lowest => 0.5,
+                JobPriority.Low => 0.7,
                 JobPriority.Normal => 0.8,
-                JobPriority.AboveNormal => 0.9,
+                JobPriority.High => 0.9,
                 _ => 1.0
             };
 

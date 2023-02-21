@@ -32,7 +32,7 @@ namespace MassTransit.JobService
         {
             var jobId = context.RequestId ?? NewId.NextGuid();
 
-            return PublishJobSubmitted(context, jobId, context.Message, context.SentTime ?? DateTime.UtcNow, null, JobPriority.High);
+            return PublishJobSubmitted(context, jobId, context.Message, context.SentTime ?? DateTime.UtcNow, null, JobPriority.Highest);
         }
 
         async Task PublishJobSubmitted(ConsumeContext context, Guid jobId, TJob job, DateTime timestamp, string concurrencyKey, JobPriority jobPriority)
