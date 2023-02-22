@@ -15,7 +15,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MassTransit.WebJobs.ServiceBus</PackageId>
+    <PackageId>Bestseller.MassTransit.WebJobs.ServiceBus</PackageId>
+    <AssemblyName>Bestseller.MassTransit.WebJobs.ServiceBus</AssemblyName>
+
     <Title>MassTransit.WebJobs.ServiceBus</Title>
     <PackageTags>MassTransit;Azure;WebJobs;AzureFunctions</PackageTags>
     <Description>MassTransit Azure WebJobs Service Bus support; $(Description)</Description>

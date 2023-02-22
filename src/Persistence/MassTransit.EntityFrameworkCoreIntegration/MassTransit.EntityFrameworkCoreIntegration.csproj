@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MassTransit.EntityFrameworkCore</PackageId>
+    <PackageId>Bestseller.MassTransit.EntityFrameworkCore</PackageId>
+    <AssemblyName>Bestseller.MassTransit.EntityFrameworkCore</AssemblyName>
+
     <Title>MassTransit.EntityFrameworkCore</Title>
     <PackageTags>MassTransit;EF;EFCore;EntityFramework;EntityFrameworkCore</PackageTags>
     <Description>MassTransit Entity Framework Core persistence support; $(Description)</Description>

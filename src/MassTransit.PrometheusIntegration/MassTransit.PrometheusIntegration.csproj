@@ -11,7 +11,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MassTransit.Prometheus</PackageId>
+    <PackageId>Bestseller.MassTransit.Prometheus</PackageId>
+    <AssemblyName>Bestseller.MassTransit.Prometheus</AssemblyName>
+
     <Title>MassTransit.Prometheus</Title>
     <PackageTags>MassTransit;Prometheus;Grafana;Metrics</PackageTags>
     <Description>MassTransit Prometheus support; $(Description)</Description>

@@ -14,7 +14,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MassTransit.DynamoDb</PackageId>
+    <PackageId>Bestseller.MassTransit.DynamoDb</PackageId>
+    <AssemblyName>Bestseller.MassTransit.DynamoDb</AssemblyName>
+
     <Title>MassTransit.DynamoDb</Title>
     <PackageTags>MassTransit;DynamoDb;AWS;Amazon</PackageTags>
     <Description>MassTransit DynamoDb persistence support; $(Description)</Description>

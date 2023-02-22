@@ -10,7 +10,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MassTransit.Interop.NServiceBus</PackageId>
+    <PackageId>Bestseller.MassTransit.Interop.NServiceBus</PackageId>
+    <AssemblyName>Bestseller.MassTransit.Interop.NServiceBus</AssemblyName>
+
     <Title>MassTransit.Interop.NServiceBus</Title>
     <PackageTags>MassTransit;NServiceBus</PackageTags>
     <Description>MassTransit Interoperability support for NServiceBus; $(Description)</Description>

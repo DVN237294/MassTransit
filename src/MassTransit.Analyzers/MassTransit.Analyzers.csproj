@@ -6,6 +6,9 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <DevelopmentDependency>true</DevelopmentDependency>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+    <PackageId>Bestseller.MassTransit.Analyzers</PackageId>
+    <AssemblyName>Bestseller.MassTransit.Analyzers</AssemblyName>
+
   </PropertyGroup>
 
   <PropertyGroup>

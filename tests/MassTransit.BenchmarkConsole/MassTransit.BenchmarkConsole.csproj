@@ -3,7 +3,9 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0;net7.0;netcoreapp3.1</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <PackageId>MassTransit.BenchmarkConsole</PackageId>
+    <PackageId>Bestseller.MassTransit.BenchmarkConsole</PackageId>
+    <AssemblyName>Bestseller.MassTransit.BenchmarkConsole</AssemblyName>
+
     <OutputType>Exe</OutputType>
     <IsPackable>False</IsPackable>
     <LangVersion>8</LangVersion>

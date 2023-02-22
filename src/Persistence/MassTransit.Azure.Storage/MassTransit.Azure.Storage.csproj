@@ -14,7 +14,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MassTransit.Azure.Storage</PackageId>
+    <PackageId>Bestseller.MassTransit.Azure.Storage</PackageId>
+    <AssemblyName>Bestseller.MassTransit.Azure.Storage</AssemblyName>
+
     <Title>MassTransit.Azure.Storage</Title>
     <PackageTags>MassTransit;Azure;Storage;ServiceBus</PackageTags>
     <Description>MassTransit Azure Storage persistence support; $(Description)</Description>

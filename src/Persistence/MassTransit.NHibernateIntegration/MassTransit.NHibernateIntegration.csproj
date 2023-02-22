@@ -14,7 +14,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MassTransit.NHibernate</PackageId>
+    <PackageId>Bestseller.MassTransit.NHibernate</PackageId>
+    <AssemblyName>Bestseller.MassTransit.NHibernate</AssemblyName>
+
     <Title>MassTransit.NHibernate</Title>
     <PackageTags>MassTransit;NHibernate</PackageTags>
     <Description>MassTransit NHibernate persistence support; $(Description)</Description>

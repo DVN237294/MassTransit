@@ -15,7 +15,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MassTransit.Hangfire</PackageId>
+    <PackageId>Bestseller.MassTransit.Hangfire</PackageId>
+    <AssemblyName>Bestseller.MassTransit.Hangfire</AssemblyName>
+
     <Title>MassTransit.Hangfire</Title>
     <PackageTags>MassTransit;Hangfire;Scheduler;Scheduling</PackageTags>
     <Description>MassTransit Hangfire scheduler support; $(Description)</Description>
