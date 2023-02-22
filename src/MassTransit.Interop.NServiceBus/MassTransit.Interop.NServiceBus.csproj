@@ -12,7 +12,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.Interop.NServiceBus</PackageId>
     <AssemblyName>Bestseller.MassTransit.Interop.NServiceBus</AssemblyName>
-    <Version>8.0.13-1.0.0</Version>
+
     <Title>MassTransit.Interop.NServiceBus</Title>
     <PackageTags>MassTransit;NServiceBus</PackageTags>
     <Description>MassTransit Interoperability support for NServiceBus; $(Description)</Description>

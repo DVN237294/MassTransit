@@ -15,7 +15,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.ActiveMQ</PackageId>
     <AssemblyName>Bestseller.MassTransit.ActiveMQ</AssemblyName>
-    <Version>8.0.13-1.0.0</Version>
+
     <Title>MassTransit.ActiveMQ</Title>
     <PackageTags>MassTransit;ActiveMQ</PackageTags>
     <Description>MassTransit ActiveMQ transport support; $(Description)</Description>

@@ -13,7 +13,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.Prometheus</PackageId>
     <AssemblyName>Bestseller.MassTransit.Prometheus</AssemblyName>
-    <Version>8.0.13-1.0.0</Version>
+
     <Title>MassTransit.Prometheus</Title>
     <PackageTags>MassTransit;Prometheus;Grafana;Metrics</PackageTags>
     <Description>MassTransit Prometheus support; $(Description)</Description>

@@ -16,7 +16,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.Azure.Cosmos.Table</PackageId>
     <AssemblyName>Bestseller.MassTransit.Azure.Cosmos.Table</AssemblyName>
-    <Version>8.0.13-1.0.0</Version>
+
     <Title>MassTransit.Azure.Cosmos.Table</Title>
     <PackageTags>MassTransit;Azure;Cosmos;Table</PackageTags>
     <Description>MassTransit Azure Cosmos persistence support; $(Description)</Description>
