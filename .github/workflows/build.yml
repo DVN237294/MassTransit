@@ -475,7 +475,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit Abstractions
         # was: brandedoutcast/publish-nuget@v2.5.5
         uses: drusellers/publish-nuget@master
@@ -484,7 +484,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit Newtonsoft
         # was: brandedoutcast/publish-nuget@v2.5.5
         uses: drusellers/publish-nuget@master
@@ -493,7 +493,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.Analyzers
         uses: drusellers/publish-nuget@master
         with:
@@ -501,7 +501,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
           include-symbols: false
       - name: Build and Publish MassTransit.Interop.NServiceBus
         uses: drusellers/publish-nuget@master
@@ -510,7 +510,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.PrometheusIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -518,7 +518,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.SignalR
         uses: drusellers/publish-nuget@master
         with:
@@ -526,7 +526,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.TestFramework
         uses: drusellers/publish-nuget@master
         with:
@@ -534,7 +534,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.Azure.Cosmos
         uses: drusellers/publish-nuget@master
         with:
@@ -542,7 +542,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.Azure.Storage
         uses: drusellers/publish-nuget@master
         with:
@@ -550,7 +550,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.Azure.Table
         uses: drusellers/publish-nuget@master
         with:
@@ -558,7 +558,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.DapperIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -566,7 +566,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.DynamoDb
         uses: drusellers/publish-nuget@master
         with:
@@ -574,7 +574,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.AmazonS3
         uses: drusellers/publish-nuget@master
         with:
@@ -582,7 +582,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.EntityFrameworkCoreIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -590,7 +590,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.EntityFrameworkIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -598,7 +598,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.MartenIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -606,7 +606,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.MongoDbIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -614,7 +614,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.NHibernateIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -622,7 +622,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.RedisIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -630,7 +630,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.HangfireIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -638,7 +638,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.QuartzIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -646,7 +646,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.ActiveMqTransport
         uses: drusellers/publish-nuget@master
         with:
@@ -654,7 +654,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.AmazonSqsTransport
         uses: drusellers/publish-nuget@master
         with:
@@ -662,7 +662,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.Azure.ServiceBus.Core
         uses: drusellers/publish-nuget@master
         with:
@@ -670,7 +670,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.EventHubIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -678,7 +678,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.Grpc
         uses: drusellers/publish-nuget@master
         with:
@@ -686,7 +686,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.KafkaIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -694,7 +694,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.RabbitMqTransport
         uses: drusellers/publish-nuget@master
         with:
@@ -702,7 +702,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.Visualizer
         uses: drusellers/publish-nuget@master
         with:
@@ -710,7 +710,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.WebJobs.EventHubsIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -718,7 +718,7 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
       - name: Build and Publish MassTransit.WebJobs.ServiceBusIntegration
         uses: drusellers/publish-nuget@master
         with:
@@ -726,5 +726,5 @@ jobs:
           version: ${{ needs.calc-version.outputs.version }}
           tag-commit: false
           nuget-key: ${{secrets.NUGET_API_KEY}}
-          nuget-source: https://nuget.pkg.github.com/BESTSELLER/index.json
+          nuget-source: https://nuget.pkg.github.com/BESTSELLER
 
