@@ -24,7 +24,8 @@ namespace MassTransit.Contracts.JobService
         TimeSpan JobTimeout { get; }
 
         /// <summary>
-        /// An optional concurrency limitation key. Job types with the same key will not run concurrently 
+        /// An optional concurrency limitation key. Job types with the same key will not run concurrently.
+        /// The key should be as short as possible while still satisfying any uniqueness requirements
         /// </summary>
         string ConcurrencyKey { get; }
 
