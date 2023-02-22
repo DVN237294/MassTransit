@@ -111,25 +111,6 @@ jobs:
         run: dotnet test -c Release --logger:"console;verbosity=normal" --filter Category!=Flaky
         working-directory: tests/MassTransit.ActiveMqTransport.Tests
 
-  test-azure-service-bus:
-    name: "Transports: Azure Service Bus"
-    if: false # too flaky at this point
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v3
-
-      - name: Install .NET Core SDK
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '7.0.x'
-
-      - name: Test Azure Service Bus
-        env:
-          MT_ASB_KEYVALUE: ${{ secrets.AZURE_SERVICEBUS }}
-          MT_AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE }}
-        run: dotnet test -c Release --logger:"console;verbosity=normal" --filter Category!=Flaky
-        working-directory: tests/MassTransit.Azure.ServiceBus.Core.Tests
   test-rabbitmq:
     name: "Transports: RabbitMQ"
     timeout-minutes: 10
@@ -177,48 +158,6 @@ jobs:
       - name: Test SQS
         run: dotnet test -c Release --logger:"console;verbosity=normal" --filter Category!=Flaky
         working-directory: tests/MassTransit.AmazonSqsTransport.Tests
-      - name: Test S3
-        run: dotnet test -c Release --logger:"console;verbosity=normal" --filter Category!=Flaky
-        working-directory: tests/MassTransit.AmazonS3.Tests
-  test-azure-table:
-    name: "Storage: Azure Table"
-    if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/v8') && github.repository == 'MassTransit/MassTransit'
-    timeout-minutes: 10
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v3
-
-      - name: Install .NET Core SDK
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '7.0.x'
-
-      - name: Test Azure Table
-        env:
-          MT_AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE }}
-        run: dotnet test -c Release --logger:"console;verbosity=normal" --filter "Category!=Flaky&Category!=Integration"
-        working-directory: tests/MassTransit.Azure.Table.Tests
-  test-cosmosdb:
-    name: "Storage: CosmosDB"
-    timeout-minutes: 10
-    runs-on: ubuntu-latest
-    if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/v8') && github.repository == 'MassTransit/MassTransit'
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v3
-
-      - name: Install .NET Core SDK
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '7.0.x'
-
-      - name: Test CosmosDB
-        env:
-          MT_COSMOS_ENDPOINT: ${{ secrets.AZURE_COSMOSENDPOINT }}
-          MT_COSMOS_KEY: ${{ secrets.AZURE_COSMOSKEY }}
-        run: dotnet test -c Release --logger:"console;verbosity=normal" --filter "Category!=Flaky&Category!=Integration"
-        working-directory: tests/MassTransit.Azure.Cosmos.Tests
   test-dapper:
     name: "Storage: Dapper"
     timeout-minutes: 10
@@ -399,25 +338,6 @@ jobs:
       - name: Test Quartz
         run: dotnet test -c Release --logger:"console;verbosity=normal" --filter Category!=Flaky
         working-directory: tests/MassTransit.QuartzIntegration.Tests
-  test-eventhub:
-    name: "Rider: EventHub"
-    runs-on: ubuntu-latest
-    if: false # turned off for flakey
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v3
-
-      - name: Install .NET Core SDK
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '7.0.x'
-
-      - name: Test EventHub
-        run: dotnet test -c Release --logger:"console;verbosity=normal" --filter Category!=Flaky
-        env:
-          MT_EH_NAMESPACE: ${{ secrets.AZURE_EVENTHUB }}
-          MT_AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE }}
-        working-directory: tests/MassTransit.EventHubIntegration.Tests
   test-kafka:
     name: "Rider: Kafka"
     runs-on: ubuntu-latest
@@ -501,11 +421,8 @@ jobs:
       - test-ubuntu
       - test-containers
       - test-activemq
-      # - test-azure-service-bus
       - test-rabbitmq
       - test-sqs
-      - test-azure-table
-      - test-cosmosdb
       - test-dapper
       - test-entity-framework
       - test-marten
@@ -514,7 +431,6 @@ jobs:
       - test-redis
       - test-hangfire
       - test-quartz
-      # - test-eventhub
       - test-kafka
       - test-signalr
     outputs:
