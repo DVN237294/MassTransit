@@ -16,7 +16,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.AmazonSQS</PackageId>
     <AssemblyName>Bestseller.MassTransit.AmazonSQS</AssemblyName>
-    <Version>8.0.13-1.0.0</Version>
+
     <Title>MassTransit.AmazonSQS</Title>
     <PackageTags>MassTransit;AmazonSQS</PackageTags>
     <Description>MassTransit Amazon SQS transport support; $(Description)</Description>

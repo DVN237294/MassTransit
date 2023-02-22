@@ -17,7 +17,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.WebJobs.ServiceBus</PackageId>
     <AssemblyName>Bestseller.MassTransit.WebJobs.ServiceBus</AssemblyName>
-    <Version>8.0.13-1.0.0</Version>
+
     <Title>MassTransit.WebJobs.ServiceBus</Title>
     <PackageTags>MassTransit;Azure;WebJobs;AzureFunctions</PackageTags>
     <Description>MassTransit Azure WebJobs Service Bus support; $(Description)</Description>

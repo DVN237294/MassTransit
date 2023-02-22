@@ -16,7 +16,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.Kafka</PackageId>
     <AssemblyName>Bestseller.MassTransit.Kafka</AssemblyName>
-    <Version>8.0.13-1.0.0</Version>
+
     <Title>MassTransit.Kafka</Title>
     <PackageTags>MassTransit;Kakfa</PackageTags>
     <Description>MassTransit Kafka Support; $(Description)</Description>

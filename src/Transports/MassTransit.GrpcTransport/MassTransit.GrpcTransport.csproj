@@ -16,7 +16,7 @@
   <PropertyGroup>
     <PackageId>Bestseller.MassTransit.Grpc</PackageId>
     <AssemblyName>Bestseller.MassTransit.Grpc</AssemblyName>
-    <Version>8.0.13-1.0.0</Version>
+
     <Title>MassTransit.Grpc</Title>
     <PackageTags>MassTransit;grpc</PackageTags>
     <Description>MassTransit gRPC transport support; $(Description)</Description>

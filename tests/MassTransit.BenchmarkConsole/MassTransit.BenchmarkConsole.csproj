@@ -5,7 +5,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <PackageId>Bestseller.MassTransit.BenchmarkConsole</PackageId>
     <AssemblyName>Bestseller.MassTransit.BenchmarkConsole</AssemblyName>
-    <Version>8.0.13-1.0.0</Version>
+
     <OutputType>Exe</OutputType>
     <IsPackable>False</IsPackable>
     <LangVersion>8</LangVersion>
