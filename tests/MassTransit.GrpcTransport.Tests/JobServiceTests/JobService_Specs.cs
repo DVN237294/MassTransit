@@ -148,7 +148,8 @@ namespace MassTransit.GrpcTransport.Tests.JobServiceTests
                             VideoId = _jobIds[i],
                             Path = "C:\\Downloads\\RickRoll.mp4",
                             Duration = 1
-                        }
+                        },
+                        JobPriority = JobPriority.Highest
                     });
             }
 
