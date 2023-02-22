@@ -4,6 +4,8 @@ This is a [BESTSELLER TECH](https://bestseller.tech/) fork of [MassTransit](http
 
 Package and assembly names have been prepended with `Bestseller` and versions indicate the upstream and bestseller version, in the format `<MassTransit version>`-`<Bestseller version>`, for example: `8.0.13-1.0.0`
 
+These packages follow upstream/master and auto-sync using the [Fork Sync GitHub Action](https://github.com/marketplace/actions/fork-sync).
+
 # MassTransit
 
 MassTransit is a _free, open-source_ distributed application framework for .NET. MassTransit makes it easy to create applications and services that leverage message-based, loosely-coupled asynchronous communication for higher availability, reliability, and scalability.
